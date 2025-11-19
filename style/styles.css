@@ -1,0 +1,624 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+     color: var(--text-color);
+     font-weight: 600;
+     cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.activo {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% ;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+----
+
+section.topo-do-site.flex{
+    padding: 40px 4%;
+
+}
+
+.flex{
+    display: flex;
+    
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 24;
+
+}
+
+.topo-do-site h1 span{
+    color: var(--main-color);
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 20px;
+}
+.topo-do-site .img-topo-site img{
+    border-radius: 20px;
+    position: relative;
+    animation: flutuar 2.5s ease-in-out alternate infinite;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+.txt-topo-site {
+    margin-top: 100px;
+}
+.txt-topo-site h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: var(--main-color);
+    
+}
+
+.txt-topo-site h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.sobre img{
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.habilidades {
+    width: 500px;
+    margin: 60px auto;
+    color: var(--text-color);
+    padding: 20px;
+    box-shadow: 0 14px 28px var(--second-bg-color), 0 10px 10px var(--main-color);
+}
+
+.barra {
+    background: var(--second-bg-color);
+    display: block;
+    height: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgb(234, 52, 234), 0 1px 2px rgb(220, 227, 12);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.barra:hover {
+    box-shadow: 0 14px 28px rgb(232, 230, 226), 0 10px 10px var(--main-color);
+}
+
+.barra span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(0, 232, 236)0%, rgb(4, 57, 121)100%);
+}
+
+.administracao {
+    width: 70%;
+    animation: html 5s;
+}
+
+.windows {
+    width: 90%;
+animation: css 5s;
+}
+
+.html {
+    width: 40%;
+    animation: php 5s;
+}
+
+.javascript {
+    width: 20%;
+    animation: javascript 5s;
+}
+
+@keyframes administracao {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes windows {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+.cabecalho {
+    font-size: 4.5rem;
+}
+
+.sobre-txt h2 {
+    justify-content: left;
+    gap: 2rem;
+    line-height: 1.2;
+}
+
+.sobre-txt h3 {
+    font-size: 2.6rem;
+}
+
+.sobre-txt p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+section.projeto {
+    color: var(--text-color);
+    line-height: 1.2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: var(--main-color);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+
+}
+
+.img-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #47587698;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-txt:hover {
+    opacity: 1;
+}
+
+.contacto h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contacto form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacto form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-box input,
+.contacto form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contacto form .input-box input {
+    width: 49%;
+}
+
+.contacto form textarea {
+    resize: none;
+}
+
+.contacto form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.rodape-txt p {
+    font-size: 1.6rem;
+}
+
+.rodape-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.rodape-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.rodape-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+@media screen and (max-width: 860px){
+    .navbar {
+        display: none;
+    }   
+    .flex {
+        flex-direction: column-reverse;
+    
+    }
+    section.topo-do-site .flex{
+    gap: 30px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 260px;
+        height: 300px;
+    }
+    .sobre img{
+    width: 300px;
+    height: auto;
+    }
+    .cabecalho {
+    font-size: 2.5rem;
+    }
+    section.sobre {
+        padding: 20px 5%;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .sobre-txt h2 {
+        justify-content: left;
+        gap: 2rem;   
+    }
+
+    .sobre-txt h3 {
+        font-size: 2.5rem;
+    }
+
+    .sobre-txt p {
+        font-size: 1.5rem;
+        margin: 2.3rem 0 3.3rem;
+    }
+
+    .habilidades {
+    width: 200px;
+    margin: 60px auto;
+    padding: 20px;
+    }
+
+    .barra {
+    background: var(--second-bg-color);
+    display: block;
+    height: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    .projeto .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .img-port {
+    width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column-reverse;
+    }
+    .rodape p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    }
+
+.menu-mobile{
+    background-color: var(--second-bg-color);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.btn-abrir-menu #menu-icon{
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.menu-mobile .btn-fechar i{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;   
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+}
+
+.overlay-menu{
+    background-color: #000000a5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+.txt-topo-site h3 span {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20ch;
+  animation: mark .5s step-end infinite, write 1s steps(22, end) infinite;
+}
+
+.txt-topo-site h3 span{
+    position: relative;
+}
+
+.txt-topo-site h3 span::before{
+    content: "";
+    animation: palavras 20s infinite;
+}
+
+.txt-topo-site h3 span::after{
+    content: "";
+    position: absolute;
+    height: calc(100% + 10px);
+    border-left: 2px solid var(--main-color);
+    right: -5px;
+    animation: cursor .5s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 5px);
+    background-color: #1f242d;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 70%, 75%, 80%, 85%{
+        width: calc(100% + 5px);
+        height: calc(100% + 5px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 5px solid var(--main-color);
+    }
+}
+
+@keyframes palavras {
+    15% {content:"Suporte Informático";
+    }
+    33% {content:"Web Designer";
+    }
+    66% {content:"Programação";
+    }
+    100% {content:"Administração de Redes";
+    }
+    
+}
+
